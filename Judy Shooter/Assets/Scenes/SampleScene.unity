@@ -5964,6 +5964,10 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -7068630820864305622, guid: 1145af01ca606514e915b2ca8d39ff55, type: 3}
+      propertyPath: m_Name
+      value: Dedo gordo
+      objectReference: {fileID: 0}
+    - target: {fileID: -7068630820864305622, guid: 1145af01ca606514e915b2ca8d39ff55, type: 3}
       propertyPath: m_Layer
       value: 3
       objectReference: {fileID: 0}
@@ -6012,6 +6016,10 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -963691850509627601, guid: 1145af01ca606514e915b2ca8d39ff55, type: 3}
+      propertyPath: m_Name
+      value: "Coraz\xF3n"
+      objectReference: {fileID: 0}
+    - target: {fileID: -963691850509627601, guid: 1145af01ca606514e915b2ca8d39ff55, type: 3}
       propertyPath: m_Layer
       value: 3
       objectReference: {fileID: 0}
@@ -6048,12 +6056,24 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2285343898908285732, guid: 1145af01ca606514e915b2ca8d39ff55, type: 3}
+      propertyPath: m_Name
+      value: "Me\xF1ique"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2285343898908285732, guid: 1145af01ca606514e915b2ca8d39ff55, type: 3}
       propertyPath: m_Layer
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2511031576885193434, guid: 1145af01ca606514e915b2ca8d39ff55, type: 3}
+      propertyPath: m_Name
+      value: Anular
+      objectReference: {fileID: 0}
+    - target: {fileID: 2511031576885193434, guid: 1145af01ca606514e915b2ca8d39ff55, type: 3}
       propertyPath: m_Layer
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2536899297092659288, guid: 1145af01ca606514e915b2ca8d39ff55, type: 3}
+      propertyPath: m_Name
+      value: Indice
       objectReference: {fileID: 0}
     - target: {fileID: 2536899297092659288, guid: 1145af01ca606514e915b2ca8d39ff55, type: 3}
       propertyPath: m_Layer
@@ -8934,7 +8954,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Hora: 12
   Sol: {fileID: 705507995}
-  DuracionDelDiaEnMinutos: 5
+  DuracionDelDiaEnMinutos: 1
 --- !u!1 &1620373197 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8617351507909462824, guid: 64d9345c1888dc2468f0eb77e85a75c8, type: 3}
