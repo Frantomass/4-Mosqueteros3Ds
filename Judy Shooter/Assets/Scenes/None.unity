@@ -467,7 +467,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 1.71
-  m_Speed: 3.5
+  m_Speed: 2
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -1435,16 +1435,28 @@ PrefabInstance:
       value: -0.35166767
       objectReference: {fileID: 0}
     - target: {fileID: 4646552891664536778, guid: 2ad30609144f3d349a846226b58b5c24, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.423767
+      objectReference: {fileID: 0}
+    - target: {fileID: 4646552891664536778, guid: 2ad30609144f3d349a846226b58b5c24, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.423767
+      objectReference: {fileID: 0}
+    - target: {fileID: 4646552891664536778, guid: 2ad30609144f3d349a846226b58b5c24, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.423767
+      objectReference: {fileID: 0}
+    - target: {fileID: 4646552891664536778, guid: 2ad30609144f3d349a846226b58b5c24, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -27.1
+      value: -27.78
       objectReference: {fileID: 0}
     - target: {fileID: 4646552891664536778, guid: 2ad30609144f3d349a846226b58b5c24, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.9
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 4646552891664536778, guid: 2ad30609144f3d349a846226b58b5c24, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -28.8
+      value: -29.55
       objectReference: {fileID: 0}
     - target: {fileID: 4646552891664536778, guid: 2ad30609144f3d349a846226b58b5c24, type: 3}
       propertyPath: m_LocalRotation.w
