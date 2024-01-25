@@ -24,6 +24,7 @@ public class Move : MonoBehaviour
         Cursor.visible = false;
     }
 
+
     private void Update()
     {
         // Movimiento en el plano XZ
