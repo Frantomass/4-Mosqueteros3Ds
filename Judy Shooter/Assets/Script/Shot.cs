@@ -14,8 +14,10 @@ public class Shot : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1"))
         {
-            if(Time.time > shotRateTime)
+            if(Time.time > shotRateTime && GameManager.Instance.Caja > 0)
             {
+                GameManager.Instance.Caja--;
+
                 GameObject newBullet;
 
                 newBullet = Instantiate(bullet, spawnPoint.position, spawnPoint.rotation);

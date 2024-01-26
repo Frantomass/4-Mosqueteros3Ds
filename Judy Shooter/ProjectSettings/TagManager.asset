@@ -7,6 +7,7 @@ TagManager:
   - minion
   - Enemigo
   - Bullet
+  - Caja de municion
   layers:
   - Default
   - TransparentFX
