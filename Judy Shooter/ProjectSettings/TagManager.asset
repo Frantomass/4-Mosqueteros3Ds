@@ -6,6 +6,7 @@ TagManager:
   tags:
   - minion
   - Enemigo
+  - Bullet
   layers:
   - Default
   - TransparentFX
