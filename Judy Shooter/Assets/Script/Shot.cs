@@ -14,9 +14,9 @@ public class Shot : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1"))
         {
-            if(Time.time > shotRateTime && GameManager.Instance.Caja > 0)
+            if(Time.time > shotRateTime && GameManager.Instance.Cajademunicion > 0)
             {
-                GameManager.Instance.Caja--;
+                GameManager.Instance.Cajademunicion--;
 
                 GameObject newBullet;
 
@@ -25,7 +25,7 @@ public class Shot : MonoBehaviour
 
                 shotRateTime = Time.time + shotRate;
 
-                Destroy(newBullet,5);
+                Destroy(newBullet,6);
 
             }
           

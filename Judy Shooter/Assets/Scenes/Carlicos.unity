@@ -655,6 +655,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e56005a4758fc04ba1bc60e110ea4a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Cajademunicion: 6
 --- !u!4 &1730264632
 Transform:
   m_ObjectHideFlags: 0
@@ -930,6 +931,10 @@ PrefabInstance:
     - target: {fileID: 290124520847161796, guid: 467612db7049e7743bfaff1108586016, type: 3}
       propertyPath: m_Name
       value: Cajademunicion
+      objectReference: {fileID: 0}
+    - target: {fileID: 7072739710095445623, guid: 467612db7049e7743bfaff1108586016, type: 3}
+      propertyPath: ammo
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

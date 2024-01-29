@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
 
 
-    public int Caja de municion = 5;
+    public int Cajademunicion = 6;
 
     private void Awake()
     {
