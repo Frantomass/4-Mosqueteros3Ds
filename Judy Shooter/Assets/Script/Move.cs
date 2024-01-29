@@ -13,6 +13,12 @@ public class Move : MonoBehaviour
     private Camera playerCamera;
     private Vector3 moveDirection;
 
+    public bool isSprinting;
+    public float sprintingSpeedMultiplier = 1.5f;
+
+    private float sprintSpeed = 1f;
+
+
     private void Start()
     {
         
@@ -46,13 +52,33 @@ public class Move : MonoBehaviour
             moveDirection.y -= gravity * Time.deltaTime;
         }
 
-        // Salto
+        JumpCheck();
+
+        RunCheck();
+        // Aplicar movimiento al CharacterController
+        characterController.Move(moveDirection * Time.deltaTime*sprintSpeed);
+    }
+
+    public void JumpCheck()
+    {
         if (characterController.isGrounded && Input.GetButtonDown("Jump"))
         {
             moveDirection.y = Mathf.Sqrt(2 * jumpHeight * gravity);
         }
+    }
 
-        // Aplicar movimiento al CharacterController
-        characterController.Move(moveDirection * Time.deltaTime);
+    public void RunCheck()
+    {
+        if(Input.GetKey(KeyCode.LeftShift))
+        {
+            sprintSpeed = sprintingSpeedMultiplier;
+        }
+        else
+        {
+            sprintSpeed = 1;
+
+        }
+
+        
     }
 }
