@@ -10,7 +10,7 @@ public class PlayerInteraction : MonoBehaviour
 
         if (other.gameObject.CompareTag("Caja de municion"))
         {
-            GameManager.Instance.Cajademunicion += other.gameObject.GetComponent<Cajademunicion>().ammo;
+            GameManager.Instance.Cajademunicion = other.gameObject.GetComponent<Cajademunicion>().ammo;
 
 
       
