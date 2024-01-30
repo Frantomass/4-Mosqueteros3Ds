@@ -628,51 +628,6 @@ MonoBehaviour:
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: 4adfc59b3ba500f4382aae8f4f0bccbf, type: 2}
   m_BuildHeightMesh: 0
---- !u!1 &1730264630
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1730264632}
-  - component: {fileID: 1730264631}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1730264631
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1730264630}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e56005a4758fc04ba1bc60e110ea4a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Cajademunicion: 6
---- !u!4 &1730264632
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1730264630}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.2001667, y: 0.35182214, z: -3.4475927}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1816662432 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2460620664095275239, guid: aea6f72806f19c6489276dde08d3b501, type: 3}
@@ -1132,4 +1087,3 @@ SceneRoots:
   - {fileID: 1826931163}
   - {fileID: 15531359}
   - {fileID: 3222415882678111044}
-  - {fileID: 1730264632}
