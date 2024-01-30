@@ -9,7 +9,7 @@ public class Shot : MonoBehaviour
     public float shotForce = 1500f;
     public float shotRate = 0.5f; 
     private float shotRateTime = 0;
-
+    public GameObject BulletExplosions;
     void Update()
     {
         if (Input.GetButtonDown("Fire1"))
@@ -18,7 +18,9 @@ public class Shot : MonoBehaviour
             {
                 GameManager.Instance.Cajademunicion--;
 
-                GameObject newBullet;
+               GameObject bulletexplosion= Instantiate(BulletExplosions, spawnPoint, BulletExplosions.transform);
+
+               GameObject newBullet;
 
                 newBullet = Instantiate(bullet, spawnPoint.position, spawnPoint.rotation);
                 newBullet.GetComponent<Rigidbody>().AddForce(spawnPoint.forward * shotForce);
@@ -26,7 +28,7 @@ public class Shot : MonoBehaviour
                 shotRateTime = Time.time + shotRate;
 
                 Destroy(newBullet,6);
-
+                Destroy(bulletexplosion, 1);
             }
           
 
