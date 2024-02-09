@@ -32,5 +32,9 @@ public class MenuInicio : MonoBehaviour
     {
         SceneManager.LoadScene("Inicio");
     }
+    public void Exit()
+    {
+        Application.Quit();
+    }
 
 }
