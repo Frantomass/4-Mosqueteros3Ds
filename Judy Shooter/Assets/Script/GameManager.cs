@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
 
 
-    public int Cajademunicion = 6;
+    public int Cajademunicion = 10;
 
     private void Awake()
     {
@@ -22,6 +22,11 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         ammoText.text = Cajademunicion.ToString(); 
+    }
+
+    public void addammo()
+    {
+        Cajademunicion += 10;
     }
 
 

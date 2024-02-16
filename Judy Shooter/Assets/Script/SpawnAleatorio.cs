@@ -5,7 +5,7 @@ using UnityEngine;
 public class SpawnAleatorio : MonoBehaviour
 
 {
-    public GameObject cubePrefab;
+    public GameObject AmmoPrefab;
     public BoxCollider GridArea;
     public int timeSpawn = 15;
 
@@ -24,7 +24,7 @@ public class SpawnAleatorio : MonoBehaviour
 
 
         Vector3 randomSpawnPosition = new Vector3(x, -0.9f, z);
-        Instantiate(cubePrefab, randomSpawnPosition, cubePrefab.transform.rotation);
+        Instantiate(AmmoPrefab, randomSpawnPosition, AmmoPrefab.transform.rotation);
     }
 
 

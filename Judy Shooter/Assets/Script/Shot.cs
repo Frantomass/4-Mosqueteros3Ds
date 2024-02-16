@@ -16,19 +16,19 @@ public class Shot : MonoBehaviour
         {
             if(Time.time > shotRateTime && GameManager.Instance.Cajademunicion > 0)
             {
-                GameManager.Instance.Cajademunicion--;
+               GameManager.Instance.Cajademunicion--;
 
                GameObject bulletexplosion= Instantiate(BulletExplosions, spawnPoint, BulletExplosions.transform);
 
                GameObject newBullet;
 
-                newBullet = Instantiate(bullet, spawnPoint.position, spawnPoint.rotation);
-                newBullet.GetComponent<Rigidbody>().AddForce(spawnPoint.forward * shotForce);
+               newBullet = Instantiate(bullet, spawnPoint.position, spawnPoint.rotation);
+               newBullet.GetComponent<Rigidbody>().AddForce(spawnPoint.forward * shotForce);
 
-                shotRateTime = Time.time + shotRate;
+               shotRateTime = Time.time + shotRate;
 
-                Destroy(newBullet,6);
-                Destroy(bulletexplosion, 1);
+               Destroy(newBullet,10);
+               Destroy(bulletexplosion, 1);
             }
           
 
