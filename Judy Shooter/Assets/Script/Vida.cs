@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Vida : MonoBehaviour
@@ -17,7 +18,6 @@ public class Vida : MonoBehaviour
     public float cambioPorcentaje = 0.2f;
 
     public float circlePorcentaje = 0.5f;
-
     private void Update()
     {
         CircleFill();
@@ -55,4 +55,23 @@ public class Vida : MonoBehaviour
         }
 
     }
-}   
+
+    public void daño(int quitarvida)
+    {
+        currentVida -= quitarvida;
+
+        if (maxVida <= 0)
+        {
+         
+            SceneManager.LoadScene("Muerte");
+        }
+    }
+
+
+
+
+
+}
+
+
+ 
