@@ -13,6 +13,8 @@ public class Arma : MonoBehaviour
         QualitySettings.vSyncCount = 0;
         Application.targetFrameRate = -1;
         anim1 = GetComponent<Animator>();
+
+
     }
 
 
@@ -39,6 +41,8 @@ public class Arma : MonoBehaviour
                 Invoke("espera3", 0.8f);
             }
         }
+
+
     }
 
     public void espera()
@@ -58,4 +62,10 @@ public class Arma : MonoBehaviour
         flip = false;
 
     }
+
+    private AudioSource audioSource;
+
+
+
+
 }

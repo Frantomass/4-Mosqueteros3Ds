@@ -10,10 +10,15 @@ public class Shot : MonoBehaviour
     public float shotRate = 0.5f; 
     private float shotRateTime = 0;
     public GameObject BulletExplosions;
+    private AudioSource audioSource;
+
+
+
+
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
-        {
+         if (Input.GetButtonDown("Fire1"))
+
             if(Time.time > shotRateTime && GameManager.Instance.Cajademunicion > 0)
             {
                GameManager.Instance.Cajademunicion--;
@@ -32,6 +37,6 @@ public class Shot : MonoBehaviour
             }
           
 
-        }
     }
 }
+

@@ -62,7 +62,6 @@ public class Vida : MonoBehaviour
 
         if (maxVida <= 0)
         {
-         
             SceneManager.LoadScene("Muerte");
         }
     }
