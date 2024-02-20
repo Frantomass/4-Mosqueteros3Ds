@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class Cajademunicion : MonoBehaviour
 {
-    public int ammo = 6;
+    public int ammo = 10;
 }

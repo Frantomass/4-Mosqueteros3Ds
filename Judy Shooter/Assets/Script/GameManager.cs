@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
 
     public void addammo()
     {
-        Cajademunicion += 10;
+        Cajademunicion = 10;
     }
 
 
