@@ -8,11 +8,8 @@ public class GameManager : MonoBehaviour
 {
 
     public TextMeshProUGUI ammoText;
-
-
+    public int defeatedEnemies=0;
     public static GameManager Instance { get; private set; }
-
-
     public int Cajademunicion = 10;
 
     private void Awake()
@@ -29,6 +26,10 @@ public class GameManager : MonoBehaviour
         Cajademunicion = 10;
     }
 
+    public void matamata()
+    {
+        defeatedEnemies += 1;
+    }
 
 
 

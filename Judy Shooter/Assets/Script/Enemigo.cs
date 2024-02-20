@@ -7,10 +7,18 @@ public class Enemigo : MonoBehaviour
 {
     public Transform objetivo;
     public float velocidad = 5f;
+    private GameManager gamemanager;
 
     private int disparosRecibidos = 0;
     public int disparosMaximos = 15;
     public bool attack = false;
+
+
+    private void Start()
+    {
+        gamemanager = GameObject.Find("GameManager").GetComponent<GameManager>();
+
+    }
     void Update()
     {
         if (!attack)
@@ -32,7 +40,11 @@ public class Enemigo : MonoBehaviour
         if (disparosRecibidos >= disparosMaximos)
         {
             // Destruir el enemigo
-            Destroy(gameObject);
+            Debug.Log("AY");
+            gamemanager.matamata();
+            //gameObject.SetActive(false);
+            //Destroy(gameObject);
+            
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
