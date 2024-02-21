@@ -5,19 +5,19 @@ using UnityEngine;
 public class SoundBullet : MonoBehaviour
 
 {
-    private AudioSource audioSource;
-
+    public AudioSource controlSonido;
+    public AudioClip SonidoDisparo;
     void Start()
     {
-        audioSource = GetComponent<AudioSource>();
+        controlSonido = GetComponent<AudioSource>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
         
         if (Input.GetButtonDown("Fire1"))
         {
-            audioSource.Play();
+            controlSonido.PlayOneShot(SonidoDisparo);
             
         }
     }
