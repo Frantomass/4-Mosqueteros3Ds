@@ -10,7 +10,7 @@ public class Shot : MonoBehaviour
     public float shotRate = 0.5f; 
     private float shotRateTime = 0;
     public GameObject BulletExplosions;
-    private AudioSource audioSource;
+ 
 
 
 
