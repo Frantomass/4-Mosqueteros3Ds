@@ -26,4 +26,6 @@ public class DañoJudy : MonoBehaviour
     {
         cooldown = false;
     }
+
 }
+

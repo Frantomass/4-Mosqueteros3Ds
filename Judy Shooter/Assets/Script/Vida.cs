@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class Vida : MonoBehaviour
 {
+
     public Image circleBar;
     public Image extraBar;
     public Image retrato;
@@ -65,11 +66,6 @@ public class Vida : MonoBehaviour
             SceneManager.LoadScene("Muerte");
         }
     }
-
-
-
-
-
 }
 
 
