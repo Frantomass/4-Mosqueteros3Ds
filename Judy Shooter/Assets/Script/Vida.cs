@@ -61,9 +61,11 @@ public class Vida : MonoBehaviour
     {
         currentVida -= quitarvida;
 
-        if (maxVida <= 0)
+        if (currentVida <= 0)
         {
             SceneManager.LoadScene("Muerte");
+            Cursor.lockState = CursorLockMode.None;
+
         }
     }
 }

@@ -19,7 +19,9 @@ public class MenuInicio : MonoBehaviour
 
     public void EscenaJuego()
     {
-        SceneManager.LoadScene("Juego");
+        SceneManager.LoadScene("Juego 1");
+        Cursor.lockState = CursorLockMode.Locked;
+
     }
 
 

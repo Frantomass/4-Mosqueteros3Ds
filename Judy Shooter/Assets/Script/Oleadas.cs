@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+
 
 public class Oleadas : MonoBehaviour
 {
@@ -11,6 +13,8 @@ public class Oleadas : MonoBehaviour
     public bool Spawning;
     private int enemiesSpawned;
     private GameManager gameManager;
+    public TextMeshProUGUI numOleada;
+    
 
 
     //Start is called before the first frame update
@@ -30,6 +34,7 @@ public class Oleadas : MonoBehaviour
         {
             StartCoroutine(Spawnoleadas(OleadasCount));
         }
+        numOleada.text = (OleadasCount/2).ToString();
 
     }
 

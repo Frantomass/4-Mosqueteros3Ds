@@ -10,7 +10,7 @@ public class PausaJuego : MonoBehaviour
         // Bloquear el cursor al centro de la pantalla
         Cursor.lockState = CursorLockMode.Locked;
         // Ocultar el cursor
-        Cursor.visible = false;
+        //Cursor.visible = false;
     }
     void Update()
     {
@@ -41,6 +41,7 @@ public class PausaJuego : MonoBehaviour
     {
         Time.timeScale = 1f;
         menuPausa.SetActive(false);
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     public void Resume()
